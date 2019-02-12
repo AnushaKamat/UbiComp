@@ -1,0 +1,5 @@
+A step counter as previously done on Arduino using theshold crossing and peak detection.
+Like before, I have assumed that Arduino is in a fixed position on my wrist. 
+The step count is displayed in binary using the 5 NeoPixel LEDs along the left side of the board. 
+Although only 4 LEDs are needed, using 5 LEDs allows the board to clearly show if step counter is over-counting. 
+LED #0 is the least significant bit, LED #1 the second least significant bit, etc.

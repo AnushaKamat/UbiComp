@@ -1,0 +1,9 @@
+I built an Android app that uses the accelerometer and gyroscope to disgtinguish between 3 different hand gestures when the phone is held facing up in your hand. 
+My motion gestures were Flipping the phone, making infinity or figure of 8 motion and writing W(for Washington)
+I was able to distinguish distinguish between these gestures using signal processing and heuristics using peak detections and threshold levels of accelerometer and gyroscope in all 3 directions.
+
+Also I used Machine Learning to predict what are the gestures once trained enough.
+I took small test set of 5 samples of each gesture.
+Then I computed various features that summarize the gestures in a manner that makes them easy to distinguish 
+The app will train a classification model offline on the data I have collected
+Then once I perform one of the gestures again and have the app correctly identify which one is performed.

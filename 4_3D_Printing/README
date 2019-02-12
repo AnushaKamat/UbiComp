@@ -1,0 +1,4 @@
+A 3D model for a case that will house the Arduino, Bluefruit board, battery, wires for a gesture detector module
+In the Gesture collector, only that the data collection will happen on the Arduino.
+With that in mind, I had to build something that will mount the Arduino on my wrist,like a watch.
+The STL for the case was made on OnShape and was 3D printed.

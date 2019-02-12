@@ -1,0 +1,5 @@
+Built my first Android app that uses the built-in sensors for something useful. 
+This app will count the number of steps that you have taken and show that number on the screen. 
+I have used the raw data from the accelerometer and gyroscope to complete this task. 
+The data will require some very simple signal processing and used combination of threshold crossing and pattern recognition using peak detection when a step is taken.
+I have also assumed the user only holds the phone in a fixed posture in their hands.

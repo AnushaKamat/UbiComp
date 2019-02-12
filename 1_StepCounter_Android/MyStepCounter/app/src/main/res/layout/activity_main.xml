@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#d2f2f8"
+    android:orientation="vertical"
+    tools:context="edu.uw.ubicomplab.accelapp.MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+
+        android:ems="10"
+        android:fadingEdge="horizontal|vertical"
+        android:text="Steps"
+        android:textAlignment="center"
+        android:textAppearance="@color/colorAccent"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="36sp"
+        android:theme="@android:style/Holo.Light.ButtonBar" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="45dp"
+        android:layout_weight="1"
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="button1Action"
+        android:text="Reset" />
+
+</LinearLayout>

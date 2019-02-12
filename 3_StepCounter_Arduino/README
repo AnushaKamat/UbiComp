@@ -1,0 +1,15 @@
+Here  I made a step counter using Adafruit Circuit Playground with Arduino IDE
+
+The step counting algorithm remains same as that I used for Android.
+
+- I have mainly considered values of x- axis as they were contributing the most towards walking/running
+-The algorithm for signal processing is as below:
+1. A sliding window of 15 samples is considered.
+2. Raw accelerometer data is subtracted by the previous accelerometer data .Hence , performing a 1 bit differentiation
+3. The differentiated data is put in the sliding window
+3. Maximum of the sliding windows is taken to detect the peak 
+The peaks are checked if crossing a certain threshold
+A time debounce is included to eliminate false positives which occur as harmonics of major peeak leading to 1 step. 
+A simple analytical data that 1 step takes around 0.3 s is been used for time debounce
+
+Handling the Board: As the accelerometer data s sensitive, the board is been handled in parallel to the floor setting
